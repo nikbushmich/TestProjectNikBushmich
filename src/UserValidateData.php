@@ -60,9 +60,11 @@ class UserValidateData
     {
         $emailOrPhone = $this->userData['emailOrPhone'];
         if (filter_var($emailOrPhone, FILTER_VALIDATE_EMAIL)) {
+
             return ['email' => $emailOrPhone];
         }
         $phone = str_replace(['+', '-', ' ', '(', ')', '_'], '', $emailOrPhone);
+
         return ['phone' => $phone];
     }
 
@@ -86,7 +88,6 @@ class UserValidateData
         }
 
         return $user;
-
     }
 
     public function passwordValidate(string $password,string $userPassword): bool

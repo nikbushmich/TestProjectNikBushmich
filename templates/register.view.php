@@ -1,5 +1,3 @@
-<?php
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,19 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <title>##########</title>
+    <title>Register</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
 </head>
 <body>
 <div class="container-fluid">
 
     <?php
+
     include __DIR__. '/../templates/header.view.php';
     ?>
 
     <?php if (Session::exists('registerError')) {
         include __DIR__. '/../templates/messageDanger.view.php';
-    }?>
+    }
+
+    ?>
 
     <div class="container-fluid">
         <main class="form-signin w-100 m-auto">
@@ -56,18 +57,15 @@
 
                                 <input type="hidden" name="token" value="##########">
 
-                               <div class="checkbox mb-3">
-                                   <label></label>
-                               </div>
-
-                               <div class="mb-3">
-
-                               <button  class="w-100 btn btn-lg btn-primary" type="submit">
-                                  Sign up
-                               </button>
-
+                                <div class="checkbox mb-3">
+                                    <label></label>
                                 </div>
 
+                                <div class="mb-3">
+                                    <button  class="w-100 btn btn-lg btn-primary" type="submit">
+                                        Sign up
+                                    </button>
+                                </div>
                             </form>
 
                         </body>

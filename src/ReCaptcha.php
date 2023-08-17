@@ -16,42 +16,6 @@ class ReCaptcha
         $this->request = $request;
     }
 
-//    $secret = '6LegxsIlAAAAACCnAkTUO-4sZhs6R4YtMGatbql8';
-//    $baseUrl = 'https://www.google.com/recaptcha/api/siteverify';
-//
-//
-//
-//
-//
-//    $responseKey = $_POST['g-recaptcha-response'];
-//    $userIP = $_SERVER['REMOTE_ADDR'];
-//
-//    $url = $baseUrl . "?secret=$secret&response=$responseKey&remoteip=$userIP";
-//
-//    try {
-//        $responseRecaptcha = file_get_contents($url);
-//
-//
-//
-//        $responseRecaptcha = json_decode($responseRecaptcha, false, 512, JSON_THROW_ON_ERROR);
-//
-//
-//        var_dump($responseRecaptcha);die;
-//        if (!$responseRecaptcha["success"]) {
-//            $this->notifier()->error('message.error.recaptcha_alert');
-//        }
-//
-//    } catch (\Exception $e) {
-//
-//        $this->notifier()->error('message.error.recaptcha_error');
-//        $responseRecaptcha["success"] = false;
-//
-//        return $this->redirectToRoute('account_registration');
-//    }
-//
-//    if (!$this->options()->getValue('submarine_users.registration')) {
-//        return $this->redirectToRoute('account_registration');
-//    }
     private function getResponseKey(): string
     {
         return $this->request['g-recaptcha-response'];

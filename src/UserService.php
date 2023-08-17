@@ -37,7 +37,6 @@ class UserService
 
     public function updateProfile(array $data): void
     {
-              
         try {
             $this->userRepository->updateUser($this->user->getId(), $data);
             $this->message['successCreateUser'] = 'Профиль обновлен';
@@ -45,5 +44,4 @@ class UserService
             $this->message['errorCreateUser'] = 'Ошибка при обновлении профиля';
         }
     }
-
 }

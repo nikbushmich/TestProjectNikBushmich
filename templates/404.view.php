@@ -10,27 +10,18 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
 </head>
 <body>
-<div class="container-fluid">
-
     <div class="container-fluid">
-        <main class="form-signin w-100 m-auto">
-            <div class="row justify-content-center">
-                <div class="col-md-4 ">
-                    <div class="position-absolute top-50 start-50 translate-middle">
-                        <body class="text-center">
 
+         <div class="position-absolute top-50 start-50 translate-middle">
+             <body class="text-center">
 
-                        <h1 class="display-1">404</h1>
-                        <h1 class="h1 mb-3 fw-normal">Sorry! Page not found</h1>
+                 <h1 class="display-1">404</h1>
+                 <h1 class="h1 mb-3 fw-normal">Sorry! Page not found</h1>
 
-                        </body>
-                    </div>
-                </div>
-            </div>
-        </main>
+             </body>
+         </div>
+
     </div>
-
-</div>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>

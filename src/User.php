@@ -15,7 +15,6 @@ class User
 
     public function __construct(array $dataUser)
     {
-//        var_dump($dataUser['createdAt']);die;
         $this->name = $dataUser['name'];
         $this->email = $dataUser['email'];
         $this->phone = $dataUser['phone'];
@@ -118,6 +117,5 @@ class User
     {
         $this->sessionHash = $sessionHash;
     }
-
 
 }

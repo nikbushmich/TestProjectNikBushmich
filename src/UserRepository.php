@@ -6,13 +6,7 @@ use orm\Repository;
 
 class UserRepository extends Repository
 {
-//    private Repository $instance;
     private const TABLE = 'users';
-
-//    public function __construct()
-//    {
-////        $this->instance = Repository::getInstance();
-//    }
 
     public function findUserById(int $id): User
     {

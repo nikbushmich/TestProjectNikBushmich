@@ -5,10 +5,8 @@
             <li><a href="/profile" class="nav-link px-2 link-dark">Профиль</a></li>
             <li><a href="/updatePassword" class="nav-link px-2 link-dark">Изменить пароль</a></li>
         </ul>
-
         <div class="col-md-3 text-end">
             <a href="/logout" type="button" class="btn btn-primary" >Выйти</a>
         </div>
-
     </header>
 </div>
