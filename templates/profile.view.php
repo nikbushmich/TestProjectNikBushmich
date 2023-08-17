@@ -1,5 +1,5 @@
 <?php
-    include __DIR__. '/../app/profile.php';
+    include __DIR__. '/../app/Controller/profile.php';
 
 
 //    var_dump($user);die;

@@ -5,17 +5,18 @@ require_once dirname(__DIR__).'/app/autoload.php';
 include __DIR__.'/../app/start.php';
 
 $routes = [
-
     '/profile' => '/templates/profile.view.php',
     '/updatePassword' => '/templates/updatePassword.view.php',
     '/login' => '/templates/login.view.php',
-    '/logout' => '/app/logout.php',
-    '/updatePass' => '/app/updatePassword.php',
-    '/register' => '/app/register.php',
-    '/updateProfile' => '/app/updateProfile.php',
-    '/authorization' => '/app/authorization.php',
     '/registration' => '/templates/register.view.php',
-    '/' => '/templates/register.view.php'
+    '/' => '/templates/register.view.php',
+
+    '/logout' => '/app/Controller/logout.php',
+    '/updatePass' => '/app/Controller/updatePassword.php',
+    '/register' => '/app/Controller/register.php',
+    '/updateProfile' => '/app/Controller/updateProfile.php',
+    '/authorization' => '/app/Controller/authorization.php',
+
 ];
 
 $route = $_SERVER['REQUEST_URI'];
